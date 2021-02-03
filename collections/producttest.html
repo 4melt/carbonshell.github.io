@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Product - Carbon Shell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel=stylesheet href=../css/product.css>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../uploads/img/ico.ico">
+    <script defer src="../js/product.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <div class="slideshow-container">
+                <div class="productshot fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../uploads/img/productshot1.jpe" style="width:30%">
+                </div>
+                <div class="productshot fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../uploads/img/productshot2.jpe" style="width:30%">
+                </div>
+                <div class="productshot fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../uploads/img/productshot3.jpe" style="width:30%">
+                </div>
+                <div class="productshot fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../uploads/img/productshot4.jpe" style="width:30%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <div id="back">
+                <a onclick="goBack()">
+                    <img src="../uploads/img/back.png" style="width:50px;height:50px;" />
+                </a>
+                <script>
+                    function goBack() {
+                        window.history.back();
+                    }
+                </script>
+            </div>
+
+            <div id="productinfo" class="panels">
+                <h1>Standard Jacket</h1>
+                <h2>$44.99</h2>
+                <h3>
+                    A Standard Softshell Jacket with
+                    <br />
+                    Carbonshell-Carbon&reg; Technology
+                </h3>
+                    <select name="sizes" id="clothing">
+                        <option AddCart(pname, pprice , "s" )>Small</option>
+                        <option AddCart(pname, pprice , "m" )>Medium</option>
+                        <option AddCart(pname, pprice , "l" )>Large</option>
+                        <option AddCart(pname, pprice , "xl" )>X-Large</option>
+                        <option AddCart(pname, pprice , "xxl" )>XX-Large</option>
+                    </select>
+                
+                <button class="AddToCart" onclick="AddCart( "Standard Jacket", "$44,99" , psize )">
+                    <span id="AddToCartText">Add to Cart</span>
+                </button>
+            </div>
+        </div>
+</body>
+</html>
